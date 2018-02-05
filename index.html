@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets\css\reset.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="header">
+            American History Hangman
+        </h1>
+    </div>
+    <div class="col-sm-12 anykey">
+        Press any key to play
+    </div>
+    <div class="col-sm-12">
+        <div class="col-sm-6 histcharacter">
+            <div id="youwin" class="col-sm-12">This is where an image of the historical figure would have populated if the user got all the letters in the word
+                correct.
+
+            </div>
+            <div id="winText" class="col-sm-12">This is where some relevant text about the historical figure's life would populate when the user got all the
+                words correct.</div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div id="correctDisplay" class="col-sm-12 correct">
+                    User correct responses were supposed to populate here, along with some underscores that matched the length of the word the
+                    user was trying to guess.
+                </div>
+                <div id="wrongDisplay" class="col-sm-12 wrong">
+                    User incorrect responses are stored here. The user has an unlimited # of incorrect responses.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            //Setting variables for game
+            var histFigures = ["Abe Lincoln", "Teddy Roosevelt", "George S Patton", "Molly Brown", "Susan B Anthony", "John Adams", "Neil Armstrong", "Rosa Parks"]
+            var gameNum = Math.floor(Math.random() * histFigures.length);
+            var gameWord = histFigures[gameNum];
+            var underScore = [];
+            console.log(gameNum);
+            console.log(histFigures);
+            console.log(gameWord);
+            console.log(underScore);
+
+            //Trying to get program to spit empty underscores back at same length as array words.
+            var blankSpace = function () {
+                for (i = 0; i < gameWord.length; i++) {
+                    underScore.push("_");
+                }
+                console.log(blankSpace);
+            }
+            //having program record keyup events to determine if user is correct or not.
+            document.addEventListener("keyup", function (event) {
+                console.log(event);
+                var keyPress = event.keyPress;
+                var wordKey = string.fromCharCode(keyPress);
+
+            });
+        });
+
+
+    //     $(document).on("keyup", function(){
+    //     $("#wrongDisplay").text("wrong");
+    //     $("#wrongDisplay").append();
+    //     if($(document).on("keyup") === (histFigures)){
+    //     $("#correctDisplay").html("correct");
+    // });
+    //     });
+    // });
+// });
+
+    //     $("input").on("keydown keypress", function(e) {
+    // console.log(e.type, e.keyCode);
+        // if true
+        // document.getElementById("#correct").innerHTML = "Correct";
+        // if else 
+        // document.getElementById("#wrong").innerHTML = "Try Again"
+
+    </script> -->
+
+
+</body>
+
+</html>

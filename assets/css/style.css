@@ -1,0 +1,50 @@
+html, body {
+    height: 100% ; 
+    width: 100% ; 
+    font-family: sans-serif ; 
+}
+.jumbotron {
+    text-align: center ; 
+    background: url(https://wallpapersite.com/images/wallpapers/usa-flag-1920x1200-hd-4k-3330.jpg);
+    color: red; 
+}
+.header {
+    text-align: center ; 
+    background-color:white ; 
+}
+.anykey {
+    text-align: center ; 
+    font-size: 24px ; 
+}
+.histcharacter {
+    border: solid 2px black ; 
+}
+#youwin {
+    border: solid 2px black ;  
+    background-color: red ; 
+    color: black ; 
+    text-align: center ; 
+    font-size: 24px ; 
+}
+#winText {
+    border: solid 2px black ; 
+    background-color: yellow; 
+    color: black ; 
+    text-align: center ; 
+    font-size: 24px ;
+
+}
+.correct {
+    border: solid 2px black ; 
+    background-color: yellow; 
+    color: black ; 
+    text-align: center ; 
+    font-size: 24px ; 
+}
+.wrong {
+    border: solid 2px black ;  
+    background-color: red ; 
+    color: black ; 
+    text-align: center ; 
+    font-size: 24px ; 
+}
